@@ -1,0 +1,18 @@
+version: '3.7'
+
+services: 
+  app_service: 
+    hostname: app_host
+    container_name: app_container
+    build: 
+      context: ./app
+      dockerfile: Dockerfile
+  web_service:
+    hostname: web_host
+    container_name: web_container
+    build: 
+      context: ./web
+      dockerfile: Dockerfile
+    ports: 
+      - 8080:80
+
