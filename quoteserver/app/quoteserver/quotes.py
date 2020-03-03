@@ -3,7 +3,7 @@ from flask import Flask, request, render_template
 
 app = Flask(__name__)
 
-client = Elasticsearch([{'host':'host.docker.internal','port':9201}])
+client = Elasticsearch([{'host':'host.docker.internal','port':9200}])
 
 index = 'quotes'
 
