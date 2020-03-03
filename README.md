@@ -4,7 +4,7 @@ Dockerizing a Flask web application behind gunicorn and Nginx
 
 This is the source code to go along with the blog article
 
-[A Serving Flask on Docker](http://xplordat.com/2020/03/13/a-serving-flask-on-docker/)
+[A Serving Flask on Docker](http://xplordat.com/2020/03/03/a-serving-flask-on-docker/)
 
 ![The big picture. The web and app containers are brought up by docker-compose. Elasticsearch on the host is opened up for access from the docker network. The app service is accessed via the web container that proxies the request to app container](./images/scheme.jpg "The big picture. The web and app containers are brought up by docker-compose. Elasticsearch on the host is opened up for access from the docker network. The app service is accessed via the web container that proxies the request to app container")
 
